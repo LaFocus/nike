@@ -1,0 +1,43 @@
+.category__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+
+  &-left {
+    display: flex;
+    gap: 100px;
+    margin-top: 15px;
+
+    &-price{
+      padding: 12px 10px;
+      background: white;
+      border: none;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-apply {
+      background: white;
+      padding: 12px 20px;
+      border: none;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  &-all{
+    background: white;
+    padding: 12px 20px;
+    border: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
