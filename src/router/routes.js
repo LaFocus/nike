@@ -1,19 +1,19 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import ProductInfo from '../views/ProductInfo.vue'
 import Home from '../views/Home.vue'
 
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '',
       name: 'Home',
+      path: '/',
       component: Home,
     },
     {
-      path: '/product/:id',
       name: 'ProductInfo',
+      path: '/product/:id',
       component: ProductInfo,
     }
   ],

@@ -8,7 +8,6 @@ export const useAddToCart = defineStore('addtocart', {
     }),
     actions: {
         add(id) {
-            // let arr = JSON.parse(localStorage.arr)
             let arr = localStorage.arr ? JSON.parse(localStorage.arr) : []
             if (arr.indexOf(`${id}`) == -1) {
                 if (localStorage.arr) {

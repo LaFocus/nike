@@ -9,7 +9,7 @@
                     <option value="title">По названию</option>
                 </select>
             </div>
-            <button class="category__wrapper-all">Общее кол-во товаров 100</button>
+            <button class="category__wrapper-all">Общее кол-во товаров {{ limit }}</button>
         </div>
     </div>
 </template>
@@ -17,6 +17,7 @@
 <script setup>
 import { ref } from 'vue'
 
+const props = defineProps(['limit'])
 const selectedOption = ref("price")
 </script>
 

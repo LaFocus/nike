@@ -1,8 +1,15 @@
+
 .productInfo {
   &__wrapper {
     display: flex;
     gap: 25px;
     margin-top: 50px;
+    font-family: Montserrat;
+    justify-content: center;
+
+    &-img {
+      max-width: 300px;
+    }
 
     &-desc {
       display: flex;

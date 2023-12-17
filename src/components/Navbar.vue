@@ -16,7 +16,7 @@
         </div>
         <Basket v-if="basketIsVisible" @emitCloseBasket="modalToggle"/>
         <div class="navbar__wrapper-categories" :class="{active: activeVal}">
-            <button class="btn" v-for="item in categoriesArr" @click="productStore.filterProducts(item); activeToggle()">{{ item }}</button>
+            <button class="btn" v-for="item in categoriesArr" :key="item" @click="productStore.filterProducts(item); activeToggle()">{{ item }}</button>
         </div>
     </div>
 </template>
@@ -39,7 +39,6 @@ const basketIsVisible = ref(false)
 const categoriesArr = computed(() => categoriesStore.arr)
 
 categoriesStore.getCategories()
-productStore.getTotalPrice()
 
 const modalToggle = () => {
     basketIsVisible.value = !basketIsVisible.value

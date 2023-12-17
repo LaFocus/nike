@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
+  position: relative;
 
   &-img{
     padding: 19px 16px 0 16px;
@@ -46,6 +47,19 @@
         font-weight: 400;
         line-height: 20px;
         color: #062f42;
+      }
+      &-disc{
+        position: absolute;
+        background: yellow;
+        width: 100px;
+        height: 100px;
+        top: -15px;
+        right: -15px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-30deg);
       }
     }
   }
